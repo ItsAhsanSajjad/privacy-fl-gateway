@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  fl-gateway:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - LOG_LEVEL=info
+    restart: unless-stopped
